@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hospital Management System</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--The logo section goes here-->
+  <!--Navbar-->
+
+  <nav class="navbar">
+    <!--LOGO-->
+    <div class="logo">
+      <img src="hospital_logo.jpeg" alt="Edura Hospial">
+      <div>
+        <div>Edura Hospital</div>
+        <div class="tagline">Healing Lives, Restoring Hope</div>
+      </div>
+    </div>
+
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="#">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+
+        <li class="services">
+          <a href="/services.htm">Services</a>
+
+        </li>
+
+        <li><a href="/price.htm">Pricing</a></li>
+        <li><a href="/contact.htm">Contact</a></li>
+        <li class="auth-buttons"><button onclick="redirectToLoginPage()">Login</button>
+        </li>
+        <li class="auth-buttons"> <button onclick="redirectToSignUp()">Sign up</button></li>
+
+
+      </div>
+    </ul>
+
+
+
+  </nav>
+
+
+
+
+  <!--The facilities section comes here-->
+  <div class="heading">
+    <h2 class="header-fac">All Facilities</h2>
+    <!--Cards Section-->
+    <div class="card-section">
+      <!--Card - 1 -->
+      <div class="card">
+        <img src="/cardiology.png" alt="cardiology" style="width: 100%;">
+        <div class="container">
+          <a href="/cardiology.htm">
+
+            <h4>Cardiology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card - 2-->
+      <div class="card">
+        <img src="/neurology.png" alt="neurology" style="width: 100%;">
+        <div class="container">
+          <a href="/neurology.html">
+            <h4>Neurology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card - 3-->
+      <div class="card">
+        <img src="/gas.jpg" alt="gastroenterology" style="width: 100%;">
+        <div class="container">
+          <a href="/gastroenterology.htm">
+            <h4>Gastroenterology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -4 -->
+      <div class="card">
+        <img src="/ortho.jpg" alt="orthopaedic" style="width: 100%;">
+        <div class="container">
+          <a href="/Orthopaedic.html">
+            <h4>Orthopaedic</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card - 5-->
+      <div class="card">
+        <img src="/onco.jpg" alt="oncology" style="width: 100%;">
+        <div class="container">
+          <a href="/Oncology.html">
+            <h4>Oncology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card - 6-->
+      <div class="card">
+        <img src="/gyne.jpg" alt="gynecology" style="width: 100%;">
+        <div class="container">
+          <a href="/Gynecology.html">
+            <h4>Gynecology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card - 7-->
+      <div class="card">
+        <img src="/derma.jpg" alt="dermatology" style="width: 100%;">
+        <div class="container">
+          <a href="/Dermatology.html">
+            <h4>Dermatology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -8-->
+      <div class="card">
+        <img src="/optha.jpg" alt="opthalmology" style="width: 100%;">
+        <div class="container">
+          <a href="/Opthalmology.html">
+            <h4>Opthalmology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -9-->
+      <div class="card">
+        <img src="/peda.jpg" alt="pediatrics" style="width: 100%;">
+        <div class="container">
+          <a href="/Pediatrics.html">
+            <h4>Pediatrics</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -10-->
+      <div class="card">
+        <img src="/endo.jpg" alt="endocrinology" style="width: 100%;">
+        <div class="container">
+          <a href="/Endocrinology.htm">
+            <h4>Endocrinology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -11-->
+      <div class="card">
+        <img src="/uro.jpg" alt="urology" style="width: 100%;">
+        <div class="container">
+          <a href="/Urology.htm">
+            <h4>Urology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -12-->
+      <div class="card">
+        <img src="/neph.jpg" alt="nephrology" style="width: 100%;">
+        <div class="container">
+          <a href="/Nephrology.htm">
+            <h4>Nephrology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -13-->
+      <div class="card">
+        <img src="/pulo.jpg" alt="pulmonology" style="width: 100%;">
+        <div class="container">
+          <a href="/Pulmonology.htm">
+            <h4>Pulmonology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -14-->
+      <div class="card">
+        <img src="/rhe.jpg" alt="rheumatology" style="width: 100%;">
+        <div class="container">
+          <a href="/Rheumatology.htm">
+            <h4>Rheumatology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -15-->
+      <div class="card">
+        <img src="/radio.jpg" alt="radiology" style="width: 100%;">
+        <div class="container">
+          <a href="/Radiology.htm">
+            <h4>Radiology</h4>
+          </a>
+        </div>
+      </div>
+      <!--Card -16-->
+      <div class="card">
+        <img src="ent.png" alt="radiology" style="width: 100%;">
+        <div class="container">
+          <a href="/ENT.htm">
+            <h4>ENT (Ear, Nose, Throat)</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Card Section Ends-->
+
+    <!--All Hospitals Lists-->
+    <div class="hospital">
+      <div class="hospital-header">
+        <h2 class="header-hos">All Hospitals In India</h2>
+        <!--Lists Section-->
+        <div class="list">
+          <!--List item - 1-->
+          <div class="card">
+            <img src="/ahm.png" alt="ahmedabad" style="width: 95%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Ahmedabad</h4>
+              <p class="description">📍 P.No.1A, Bhat GIDC Est. Dist. Airport Gandhinagar Road, Dist. Gandhinagar,
+                - 382428 Gujarat</p>
+            </div>
+          </div>
+          <!--List item - 2-->
+          <div class="card">
+            <img src="/bang.png" alt="bangalore" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Bangalore</h4>
+              <p class="description">📍 154 / 11, Bannerghatta Road Opp. I.I.M Bangalore - 560 076</p>
+            </div>
+          </div>
+          <!--List item -3-->
+          <div class="card">
+            <img src="/bhub.png" alt="Bhubneshwar" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Bhubneshwar</h4>
+              <p class="description">📍 Plot No. 251, Old Sainik School Road Bhubaneshwar - 750 015</p>
+            </div>
+          </div>
+          <!--List item -4-->
+          <div class="card">
+            <img src="/chennai.png" alt="chennai" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Chennai</h4>
+              <p class="description">📍 21, Greams Lane, Off Greams Road Chennai – 600006</p>
+            </div>
+          </div>
+          <!--List item-5-->
+          <div class="card">
+            <img src="/delhi.png" alt="delhi" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Delhi</h4>
+              <p class="description">📍 Sarita Vihar Delhi Mathura Road, New Delhi - 110076 (India)
+              </p>
+            </div>
+          </div>
+          <!--List item-6-->
+          <div class="card">
+            <img src="/gu.png" alt="guwahti" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Guwahti</h4>
+              <p class="description">📍 International Hospitals Lotus Tower, Christian Basti, G.S.Road Guwahati - 781
+                005</p>
+            </div>
+          </div>
+          <!--List item-7-->
+          <div class="card">
+            <img src="/hy.png" alt="hyderabad" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Hyderabad</h4>
+              <p class="description">📍 Film Nagar, Jubilee Hills, Hyderabad, Telangana State, India. Toll No – 1860 500
+                1066</p>
+            </div>
+          </div>
+          <!--List item-8-->
+          <div class="card">
+            <img src="/kol.png" alt="kolkata" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Kolkata</h4>
+              <p class="description">📍58, Canal Circular Road Kolkata - 700 054
+              </p>
+            </div>
+          </div>
+          <!--List item-9-->
+          <div class="card">
+            <img src="/luck.png" alt="lucknow" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Lucknow</h4>
+              <p class="description">📍
+                Kanpur - Lucknow Rd, Sect. B, Bargawan, LDA Colony, Lucknow, UP 226012</p>
+            </div>
+          </div>
+          <!--List item-10-->
+          <div class="card">
+            <img src="/madu.png" alt="madurai" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Madurai</h4>
+              <p class="description">📍 Lake View Road, K.K. Nagar, Madurai - 625 020</p>
+            </div>
+          </div>
+          <!--List item-11-->
+          <div class="card">
+            <img src="/mum.png" alt="mumbai" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Mumbai</h4>
+              <p class="description">📍 Parsik Hill Road, Sector 23, CBD Belapur, Navi Mumbai - 400 614</p>
+            </div>
+          </div>
+          <!--List item-12-->
+          <div class="card">
+            <img src="/my.png" alt="mysore" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Mysore</h4>
+              <p class="description">📍 Adhichunchanagiri Road Kuvempunagar, Mysore - 570 023</p>
+            </div>
+          </div>
+          <!--List item-13-->
+          <div class="card">
+            <img src="/noida.png" alt="noida" style="width: 100%;">
+            <div class="container">
+              <h4 onclick="toggleDetails(this)">Noida</h4>
+              <p class="description">📍 E 2, Block E, Sector 26, Noida, Uttar Pradesh 201301</p>
+            </div>
+          </div>
+          <!--Lis item-14-->
+          <div class="card">
+            <img src="/tric.png" alt="trichy" style="width: 100%;">
+            <div class="container">
+
+              <h4 onclick="toggleDetails(this)">Trichy</h4>
+              <p class="description">📍 Ariyamangalam Area, Chennai - Madurai Highway, Trichy - 620 010</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+      <p>&copy; 2023 Aryan Verma | Diljot Singh Baweja. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+</body>
+
+</html>
